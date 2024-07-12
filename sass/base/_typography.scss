@@ -1,7 +1,23 @@
 /**
  * Basic typography style for copy text
+ Nessa tipografia aqui o Diego colocou tudo global só do body - até agora. Então vou seguir esse mesmo raciocínio.
  */
-body {
-  color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+body{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: $cor-preta;
 }
+// Aqui eu pensei em colocar o que é global, mas o Diego acabou colocando tudo dentro da caixa com classes ao inves dos nomes das tags.
+// h1{
+//   font-size: 4.88rem;
+// }
+
+span{
+  font-weight: 600;
+}
+// Diego colocou aqui o bold na tipografia global por que ele acha que nao terá mais nenhuma fonte diferente desse peso aqui. Já eu fiz com span
+// b, strong{
+//   font-weight: 600;
+// }
+// Outra coisa que o Diego fez que eu fiz igual foi colocar p dentro de li por que o flex identifica varias tag e a acaba colocando todos e coluna. 

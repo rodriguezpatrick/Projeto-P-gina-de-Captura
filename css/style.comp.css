@@ -1,0 +1,149 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.img {
+  width: 100%;
+}
+
+/**
+ * Basic typography style for copy text
+ Nessa tipografia aqui o Diego colocou tudo global só do body - até agora. Então vou seguir esse mesmo raciocínio.
+ */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #1a1b1f;
+}
+
+span {
+  font-weight: 600;
+}
+
+.secao {
+  display: flex;
+  flex-flow: column;
+  padding: 6.1rem 4.88rem;
+}
+.secao.secao-hero {
+  padding: 6.1rem 4.88rem 0 4.88rem;
+}
+.secao.secao-protecaodados {
+  padding: 3.12rem 2rem;
+}
+
+.container {
+  display: flex;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+.container.container-protecaodados {
+  text-align: center;
+}
+
+.caixa {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 3.12rem;
+  padding: 3.3rem 2.7rem;
+  position: relative;
+  min-width: 45rem;
+}
+.caixa__lista {
+  display: flex;
+  flex-flow: column;
+  gap: 1.28rem;
+}
+.caixa__item-lista {
+  display: flex;
+  align-items: start;
+  gap: 1.28rem;
+}
+
+.caixa__imgcanto {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  padding: 1.5rem 1.3rem;
+  width: 8.5rem;
+}
+.caixa__imgcanto img {
+  max-width: 100%;
+}
+
+.secao--hero {
+  position: relative;
+}
+
+.img {
+  display: flex;
+  align-items: flex-end;
+  width: 500rem;
+  margin-left: -10rem;
+}
+.img img {
+  width: 100%;
+}
+
+.botao {
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: #fff;
+  background-color: #eebe2a;
+  padding: 1rem 3.12rem;
+  border-radius: 3rem;
+  border: 2px;
+  cursor: pointer;
+  border-bottom: 0.4rem solid #997a1b;
+  border-right: 0.4rem solid #997a1b;
+  box-shadow: 0rem 0rem 0.9rem 0.3rem rgba(0, 0, 0, 0.25);
+}
+.botao:hover {
+  border: solid 0.2rem #eebe2a;
+}
+
+.caixa {
+  background-color: #f1f1f1;
+  border-radius: 3rem;
+  box-shadow: inset 0rem 0rem 0.9rem 0.3rem rgba(0, 0, 0, 0.25);
+}
+.caixa__titulos {
+  text-align: center;
+}
+.caixa__h1 {
+  font-size: 4.76rem;
+  color: #1c415c;
+  line-height: 1;
+}
+.caixa__subtitulo {
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+.caixa__item-lista {
+  font-size: 1.92rem;
+  line-height: 1;
+}
+.caixa__imgcanto {
+  box-shadow: inset 0rem 0rem 0.9rem 0.3rem rgba(0, 0, 0, 0.25);
+}
+
+.secao-hero {
+  background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/64957938a8a62d8071397ed5_pgc-python-bg1.webp);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=style.comp.css.map */

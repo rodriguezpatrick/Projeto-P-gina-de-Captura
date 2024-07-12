@@ -1,0 +1,27 @@
+// Nesse arquivo acho que vai envolver tudo da caixa. Diego preferiu misturar tipografia com layout; Ele escreveu todas as classes dos elementos da caixa e foi colocando. A minha dúvida era mesmo a separação
+
+.caixa{
+    background-color: $cor-cinza-claro;
+    border-radius: 3rem;
+    box-shadow: inset 0rem 0rem 0.9rem 0.3rem rgb(0, 0, 0, .25);
+    &__titulos{
+        text-align: center;
+    }
+    &__h1{
+        font-size: 4.76rem;
+        color: $cor-azul-escuro;
+        line-height: 1;
+        
+    }
+    &__subtitulo{
+        font-size: 2.3rem;
+        font-weight: 600;
+    }
+    &__item-lista{
+        font-size: 1.92rem;
+        line-height: 1;
+    }
+    &__imgcanto{
+        box-shadow: inset 0rem 0rem 0.9rem 0.3rem rgb(0, 0, 0, .25);
+    }
+}
