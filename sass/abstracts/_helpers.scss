@@ -8,10 +8,32 @@ $cor-preta: #1a1b1f;
 $cor-cinza-claro: #f1f1f1;
 $cor-azul-escuro: #1c415c;
 $cor-amarela: #eebe2a;
-$cor-amarelo-escuro: #997a1b;
+$cor-cinza-escuro: #4b4d4d;
 $cor-branca: #fff;
+$cor-azul-claro: #256783;
 
-// Font-size
+@mixin flex(
+    $direction: row,
+    $wrap: nowrap,
+    $align: stretch,
+    $justify: start,
+    $gap: 0
+){
+    display: flex;
+    flex-flow: $direction $wrap;
+    align-items: $align;
+    justify-content: $justify;
+    gap: $gap;
+}
 
-// $padding-secao: 
-// $titulo-h1: 
+// Extend
+
+%titulo{
+    font-size: 4.76rem;
+    line-height: 1;
+}
+
+%subtitulo{
+    font-size: 2.76rem;
+    font-weight: 700;
+}

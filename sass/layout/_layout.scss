@@ -2,15 +2,20 @@
 // This file contains all styles related to the layout of the site/application.
 // -----------------------------------------------------------------------------
 
+// Layout Geral
+
 .secao {
   display: flex;
   flex-flow: column;
   padding: 6.1rem 4.88rem;
-  &.secao-hero {
+  &.secao--hero {
     padding: 6.1rem 4.88rem 0 4.88rem;
   }
-  &.secao-protecaodados {
+  &.secao--protecaodados {
     padding: 3.12rem 2rem;
+    line-height: 1;
+    font-size: 1.5rem;
+    background-color: $cor-cinza-claro;
   }
 }
 
@@ -19,11 +24,9 @@
   max-width: 100rem;
   margin: 0 auto;
   align-items: start;
-  &.container-protecaodados {
-    text-align: center;
-  }
 }
 
+// Layout Seção hero
 .caixa {
   display: flex;
   flex-flow: column;
@@ -42,28 +45,25 @@
     align-items: start;
     gap: 1.28rem;
   }
-}
-
-.caixa__imgcanto {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(35%, -35%);
-  background-color: $cor-cinza-claro;
-  border-radius: 50%;
-  padding: 1.5rem 1.3rem;
-  width: 6.5rem;
-  height: 6.5rem;
-  & img {
-    max-width: 100%;
+  &__imgcanto {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(35%, -35%);
+    background-color: $cor-cinza-claro;
+    border-radius: 50%;
+    padding: 1.5rem 1.3rem;
+    width: 6.5rem;
+    height: 6.5rem;
+    & img {
+      max-width: 100%;
+    }
   }
 }
 
-.secao--hero {
-  position: relative;
-}
+
 
 .img {
   display: flex;
@@ -73,4 +73,36 @@
   & img {
     width: 100%;
   }
+}
+
+// Layout Proteção de Dados
+
+
+
+// Layout Quero participar
+
+
+
+// Layout Evento gratuito
+
+.container-eventogratuito{
+display: flex;
+flex-flow: column;  
+}
+
+.videos{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+// Layout capacidades
+
+.container-capaz{
+  display: flex;
+  flex-flow: column;
+  background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/6669ea25d9240a2849caa85b_pgcpy-bg-1.webp);
+}
+
+.grid{
+  display: grid;
 }

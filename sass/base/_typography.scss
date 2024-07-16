@@ -21,3 +21,8 @@ span{
 //   font-weight: 600;
 // }
 // Outra coisa que o Diego fez que eu fiz igual foi colocar p dentro de li por que o flex identifica varias tag e a acaba colocando todos e coluna. 
+
+.titulo{
+  @extend %titulo;
+  font-weight: 500;
+}

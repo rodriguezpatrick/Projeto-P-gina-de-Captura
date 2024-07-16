@@ -8,14 +8,12 @@
         text-align: center;
     }
     &__h1{
-        font-size: 4.76rem;
+        @extend %titulo;
         color: $cor-azul-escuro;
-        line-height: 1;
         
     }
     &__subtitulo{
-        font-size: 2.3rem;
-        font-weight: 600;
+        @extend %subtitulo;
     }
     &__item-lista{
         font-size: 1.92rem;
