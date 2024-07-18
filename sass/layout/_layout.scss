@@ -8,15 +8,6 @@
   display: flex;
   flex-flow: column;
   padding: 6.1rem 4.88rem;
-  &.secao--hero {
-    padding: 6.1rem 4.88rem 0 4.88rem;
-  }
-  &.secao--protecaodados {
-    padding: 3.12rem 2rem;
-    line-height: 1;
-    font-size: 1.5rem;
-    background-color: $cor-cinza-claro;
-  }
 }
 
 .container {
@@ -85,23 +76,13 @@
 
 // Layout Evento gratuito
 
-.container-eventogratuito{
+.container--eventogratuito{
 display: flex;
 flex-flow: column;  
 }
 
-.videos{
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-}
-
 // Layout capacidades
 
-.container-capaz{
-  display: flex;
-  flex-flow: column;
-  background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/6669ea25d9240a2849caa85b_pgcpy-bg-1.webp);
-}
 
 .grid{
   display: grid;

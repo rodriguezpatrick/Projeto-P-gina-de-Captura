@@ -12,6 +12,8 @@ $cor-cinza-escuro: #4b4d4d;
 $cor-branca: #fff;
 $cor-azul-claro: #256783;
 
+// mixin
+
 @mixin flex(
     $direction: row,
     $wrap: nowrap,
@@ -36,4 +38,16 @@ $cor-azul-claro: #256783;
 %subtitulo{
     font-size: 2.76rem;
     font-weight: 700;
+    &--center{
+        align-self: center;
+    }
+    &--bordaamarela{
+        border-left: 5px solid  $cor-amarela;
+    }
+}
+
+
+
+%subtitulo-aula{
+    font-size: 1.92rem;
 }

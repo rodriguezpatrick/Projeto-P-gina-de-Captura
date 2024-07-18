@@ -1,0 +1,13 @@
+.aula{
+    @include flex($direction: column, $gap:1.5rem);
+    &__cabecalho{
+        @include flex($align: center, $gap: 1rem);
+        @extend %subtitulo-aula;
+    }
+    &__subtitulo{
+
+    }
+    &__conteudo{
+
+    }
+}

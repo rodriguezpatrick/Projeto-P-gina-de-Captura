@@ -1,49 +1,124 @@
 // -----------------------------------------------------------------------------
 // As tag desse documento nao fazem parte de nenhuma caixa
 // -----------------------------------------------------------------------------
-.secao{
+.secao {
   &--hero {
     background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/64957938a8a62d8071397ed5_pgc-python-bg1.webp);
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
   }
+  &--hero {
+    padding: 6.1rem 4.88rem 0 4.88rem;
+  }
+  &--protecaodados {
+    padding: 3.12rem 2rem;
+    line-height: 1;
+    font-size: 1.5rem;
+    background-color: $cor-cinza-claro;
+  }
+  &--lira {
+    background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/666a079387dbf494587480bd_pgcpy-bg-2.webp);
+  }
 }
 
 .span--azul,
-.passo__titulo{
+.passo__titulo {
   color: $cor-azul-escuro;
   font-weight: 700;
 }
 
 .container {
-  &--hero{
-    
+  &--protecaodados {
+    text-align: center;
   }
-  &--protecaodados{
-      text-align: center;
-  }
-  &--passo{
+  &--passo {
     display: flex;
     flex-flow: column;
     gap: 5rem;
   }
+  &--eventogratuito {
+    @include flex($direction: column, $gap: 6rem);
+  }
+  &--capaz {
+    @include flex($direction: column, $gap: 3rem);
+    padding: 4.88rem 3.9rem;
+    background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/6669ea25d9240a2849caa85b_pgcpy-bg-1.webp);
+    color: $cor-branca;
+  }
+  &--projetos {
+    @include flex($direction: column, $gap: 6rem, $justify: center);
+  }
 }
 
-.grid{
-  &--passo{
+.grid {
+  &--passo {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 6rem;
     row-gap: 3rem;
   }
+  &--aprender {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+  }
 }
 
-.img-lira{
+.img-lira {
   grid-column: 2;
   grid-row: 1 / span 2;
   align-self: center;
 }
 
-.passos-cabecalho{
+.cabecalho-titulo {
   @include flex($gap: 1.6rem, $align: center);
+  &--azul {
+    background-color: $cor-azul-claro;
+    padding: 1.2rem 3rem;
+    border-radius: 4rem;
+    color: $cor-branca;
+    align-self: center;
+  }
+  &--center{
+    @include flex($gap: 1.6rem, $justify: center);
+  }
+}
+
+.aprender-img {
+  border-radius: 2rem;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: transform ease-in 100ms;
+  }
+}
+
+.conteudo-capaz {
+  @include flex($gap: 3rem, $align: center);
+}
+
+.conteudo-aula {
+  @include flex($direction: column, $gap: 2rem);
+}
+
+.projetos {
+  @include flex($direction: column, $gap: 2rem);
+}
+
+.lira {
+  @include flex($direction: column, $gap: 3rem);
+  &__titulo {
+    border-left: solid 5px $cor-amarela;
+    color: $cor-branca;
+    padding-left: 2rem;
+    line-height: 1.2;
+    &--amarelo {
+      color: $cor-amarela;
+    }
+  }
+  &__conteudo {
+    background-color: $cor-branca;
+    border-radius: 1rem;
+    padding: 3rem;
+  }
 }

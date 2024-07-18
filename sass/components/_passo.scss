@@ -10,9 +10,6 @@
         background-color: $cor-azul-claro;
         border-radius: 0.8rem;
     }
-    &__icone{
-
-    }
     &__titulo{
         @extend %subtitulo;
         &--azul{
@@ -20,27 +17,3 @@
         }
     }
 }
-
-// .passo{
-//     display: flex;
-//     flex-flow: column;
-//     gap: 1.5rem;
-//     line-height: 1.5;
-//     &__titulo{
-//       display: flex;
-//       align-items: center;
-//       gap: 1rem;
-//     }
-//     &.passo-2{
-//       grid-column: 3;
-//       grid-row: 1;
-//     }
-//     &.passo-3{
-//       grid-column: 1;
-//       grid-row: 2;
-//     }
-//     &.passo-4{
-//       grid-column: 3;
-//       grid-row: 2;
-//     }
-//   }

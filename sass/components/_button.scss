@@ -12,11 +12,15 @@
   border: 2px;
   cursor: pointer;
   box-shadow: 0rem 0rem 0.9rem 0.3rem rgb(0, 0, 0, 0.25);
+  text-transform: capitalize;
   &--amarelo {
     border-bottom: 0.4rem solid darken($cor-amarela, 25%);
     border-right: 0.4rem solid darken($cor-amarela, 25%);
   }
   &:hover {
     border: solid 0.2rem $cor-amarela;
+  }
+  &--centralizado{
+    align-self: center;
   }
 }
