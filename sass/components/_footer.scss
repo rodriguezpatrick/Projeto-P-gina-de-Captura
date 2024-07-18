@@ -1,0 +1,15 @@
+.container--footer{
+    @include flex($align: center, $justify: end);
+    width: 100%;
+
+    & a{
+       text-decoration: none;
+       color: inherit;
+    }
+  }
+  
+.logo-hashtag{
+    width: 3.7rem;
+    height: 3.7rem;
+  }
+  

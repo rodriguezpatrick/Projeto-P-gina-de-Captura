@@ -14,6 +14,7 @@
     line-height: 1;
     font-size: 1.5rem;
     background-color: $cor-cinza-claro;
+    box-shadow: 0 1rem 1rem -0.2rem rgba(0, 0, 0, 0.123)
   }
   &--lira {
     position: relative;
@@ -22,6 +23,10 @@
     background-repeat: no-repeat;
     padding-bottom: 0;
   }
+}
+
+.protecao-conteudo{
+  font-size: 1.5rem;
 }
 
 .img-lira-notebook{
@@ -67,10 +72,6 @@
   }
   &--lira{
     width: 100%;
-  }
-  &--footer{
-    width: 100%;
-    @include flex($align: center, $justify: end)
   }
 }
 
@@ -156,7 +157,3 @@
   width: 55rem;
 }
 
-.logo-hashtag{
-  width: 3.7rem;
-  height: 3.7rem;
-}
