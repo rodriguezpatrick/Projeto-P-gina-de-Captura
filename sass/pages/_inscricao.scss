@@ -7,8 +7,6 @@
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
-  }
-  &--hero {
     padding: 6.1rem 4.88rem 0 4.88rem;
   }
   &--protecaodados {
@@ -18,8 +16,22 @@
     background-color: $cor-cinza-claro;
   }
   &--lira {
+    position: relative;
     background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/666a079387dbf494587480bd_pgcpy-bg-2.webp);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
   }
+}
+
+.img-lira-notebook{
+  height: 60rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-left: 0;
+  transform: translate(10%);
+
 }
 
 .span--azul,
@@ -29,6 +41,10 @@
 }
 
 .container {
+  &--hero{
+    width: 100%;
+    position: relative;
+  }
   &--protecaodados {
     text-align: center;
   }
@@ -48,6 +64,13 @@
   }
   &--projetos {
     @include flex($direction: column, $gap: 6rem, $justify: center);
+  }
+  &--lira{
+    width: 100%;
+  }
+  &--footer{
+    width: 100%;
+    @include flex($align: center, $justify: end)
   }
 }
 
@@ -107,6 +130,8 @@
 
 .lira {
   @include flex($direction: column, $gap: 3rem);
+  max-width: 50rem;
+  margin-bottom: 6.1rem;
   &__titulo {
     border-left: solid 5px $cor-amarela;
     color: $cor-branca;
@@ -117,8 +142,21 @@
     }
   }
   &__conteudo {
+    @include flex($direction: column, $gap: 2rem);
     background-color: $cor-branca;
     border-radius: 1rem;
     padding: 3rem;
   }
+}
+
+.img-lira-python{
+  position: absolute;
+  bottom: 0;
+  right: 9.3rem;
+  width: 55rem;
+}
+
+.logo-hashtag{
+  width: 3.7rem;
+  height: 3.7rem;
 }

@@ -8,7 +8,8 @@
   color: $cor-branca;
   padding: 5rem 3rem;
   &__caixa{
-    @include flex($direction: column, $gap: 1.5rem)
+    @include flex($direction: column, $gap: 1.5rem);
+    backdrop-filter: blur(5px)
   }
   &__titulo {
     font-size: 2.76rem;

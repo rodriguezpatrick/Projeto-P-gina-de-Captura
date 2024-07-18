@@ -25,7 +25,9 @@
   gap: 2.5rem;
   padding: 3.3rem 2.7rem;
   position: relative;
-  min-width: 45rem;
+  width: 50rem;
+  z-index: 99;
+  margin-bottom: 6.1rem;
   &__lista {
     display: flex;
     flex-flow: column;
@@ -56,15 +58,15 @@
 
 
 
-.img {
-  display: flex;
-  align-items: flex-end;
-  width: 500rem;
-  margin-left: -10rem;
-  & img {
-    width: 100%;
-  }
-}
+// .img {
+//   display: flex;
+//   align-items: flex-end;
+//   width: 500rem;
+//   margin-left: -10rem;
+//   & img {
+//     width: 100%;
+//   }
+// }
 
 // Layout Proteção de Dados
 

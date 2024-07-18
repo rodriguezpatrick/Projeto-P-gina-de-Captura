@@ -74,7 +74,9 @@ span {
   gap: 2.5rem;
   padding: 3.3rem 2.7rem;
   position: relative;
-  min-width: 45rem;
+  width: 50rem;
+  z-index: 99;
+  margin-bottom: 6.1rem;
 }
 .caixa__lista {
   display: flex;
@@ -101,16 +103,6 @@ span {
 }
 .caixa__imgcanto img {
   max-width: 100%;
-}
-
-.img {
-  display: flex;
-  align-items: flex-end;
-  width: 500rem;
-  margin-left: -10rem;
-}
-.img img {
-  width: 100%;
 }
 
 .container--eventogratuito {
@@ -218,6 +210,7 @@ span {
   align-items: stretch;
   justify-content: start;
   gap: 1.5rem;
+  backdrop-filter: blur(5px);
 }
 .projeto__titulo {
   font-size: 2.76rem;
@@ -260,8 +253,6 @@ span {
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
-}
-.secao--hero {
   padding: 6.1rem 4.88rem 0 4.88rem;
 }
 .secao--protecaodados {
@@ -271,7 +262,20 @@ span {
   background-color: #f1f1f1;
 }
 .secao--lira {
+  position: relative;
   background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/666a079387dbf494587480bd_pgcpy-bg-2.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  padding-bottom: 0;
+}
+
+.img-lira-notebook {
+  height: 60rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-left: 0;
+  transform: translate(10%);
 }
 
 .span--azul,
@@ -280,6 +284,10 @@ span {
   font-weight: 700;
 }
 
+.container--hero {
+  width: 100%;
+  position: relative;
+}
 .container--protecaodados {
   text-align: center;
 }
@@ -311,6 +319,17 @@ span {
   align-items: stretch;
   justify-content: center;
   gap: 6rem;
+}
+.container--lira {
+  width: 100%;
+}
+.container--footer {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: end;
+  gap: 0;
 }
 
 .grid--passo {
@@ -390,6 +409,8 @@ span {
   align-items: stretch;
   justify-content: start;
   gap: 3rem;
+  max-width: 50rem;
+  margin-bottom: 6.1rem;
 }
 .lira__titulo {
   border-left: solid 5px #eebe2a;
@@ -401,9 +422,26 @@ span {
   color: #eebe2a;
 }
 .lira__conteudo {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: start;
+  gap: 2rem;
   background-color: #fff;
   border-radius: 1rem;
   padding: 3rem;
+}
+
+.img-lira-python {
+  position: absolute;
+  bottom: 0;
+  right: 9.3rem;
+  width: 55rem;
+}
+
+.logo-hashtag {
+  width: 3.7rem;
+  height: 3.7rem;
 }
 
 /*# sourceMappingURL=style.css.map */
