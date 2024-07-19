@@ -267,16 +267,14 @@ span {
   height: 3.7rem;
 }
 
-.popup-off {
-  display: none;
+.popup--aberto .popup {
+  display: flex;
 }
 
 .popup {
-  display: flex;
-  flex-flow: row nowrap;
+  display: none;
   align-items: center;
   justify-content: center;
-  gap: 0;
   position: fixed;
   top: 0;
   bottom: 0;
