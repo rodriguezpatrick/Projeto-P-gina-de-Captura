@@ -1,5 +1,4 @@
 .projeto {
-  //   @include flex($align: center);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-radius: 2rem;
@@ -7,10 +6,20 @@
   background-image: linear-gradient(#003962, #00121f);
   color: $cor-branca;
   padding: 5rem 3rem;
+  @include response(small){
+    grid-template-columns: auto;
+  }
   &__caixa{
     @include flex($direction: column, $gap: 1.5rem);
-    backdrop-filter: blur(5px)
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border-radius: 2rem;
   }
+  // &__cabecalho{
+  //   @include response(small){
+  //     text-align: center;
+  //   }
+  // }
   &__titulo {
     font-size: 2.76rem;
     color: $cor-amarela;

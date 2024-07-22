@@ -8,35 +8,53 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 6.1rem 4.88rem 0 4.88rem;
+    overflow: hidden;
+    @include response(tiny){
+      padding: 4.88rem 3.12rem 0 3.12rem
+    }
   }
   &--protecaodados {
     padding: 3.12rem 2rem;
     line-height: 1;
     font-size: 1.5rem;
     background-color: $cor-cinza-claro;
-    box-shadow: 0 1rem 1rem -0.2rem rgba(0, 0, 0, 0.123)
+    box-shadow: 0 1rem 1rem -0.2rem rgba(0, 0, 0, 0.123);
   }
   &--lira {
     position: relative;
     background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/666a079387dbf494587480bd_pgcpy-bg-2.webp);
+    background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
     padding-bottom: 0;
   }
+  &--footer{
+    padding: 2.5rem 2rem;
+  }
 }
 
-.protecao-conteudo{
-  font-size: 1.5rem;
+.protecao-conteudo {
+  font-size: 1.33rem;
 }
 
-.img-lira-notebook{
-  height: 60rem;
+.img-lira-notebook {
   position: absolute;
   bottom: 0;
   right: 0;
   margin-left: 0;
   transform: translate(10%);
-
+  width: 70%;
+  @include response(medium) {
+    transform: translate(10%);
+  }
+  @include response(small) {
+    position: relative;
+    transform: none;
+    max-width: 53rem;
+  }
+  @include response(tiny){
+    width: 40rem;
+  }
 }
 
 .span--azul,
@@ -46,9 +64,16 @@
 }
 
 .container {
-  &--hero{
+  &--hero {
     width: 100%;
     position: relative;
+    @include response(small) {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3.12rem;
+    }
   }
   &--protecaodados {
     text-align: center;
@@ -60,31 +85,72 @@
   }
   &--eventogratuito {
     @include flex($direction: column, $gap: 6rem);
+    display: flex;
+    flex-flow: column;
+    @include response(small){
+      gap: 3.12rem;
+    }
   }
   &--capaz {
-    @include flex($direction: column, $gap: 3rem);
+    @include flex($direction: column, $gap: 4.88rem);
     padding: 4.88rem 3.9rem;
     background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/6669ea25d9240a2849caa85b_pgcpy-bg-1.webp);
     color: $cor-branca;
   }
   &--projetos {
-    @include flex($direction: column, $gap: 6rem, $justify: center);
+    @include flex($direction: column, $gap: 6.1rem, $justify: center);
+    @include response(tiny){
+      gap: 3.12rem;
+    }
   }
-  &--lira{
+  &--lira {
     width: 100%;
+    @include response(small) {
+      @include flex($direction: column, $align: center, $justify: center);
+      gap: 3.12rem;
+    }
+  }
+  &--footer{
+    @include response(small){
+      @include flex($direction: column, $align: center, $gap: 2rem)
+    }
+  }
+}
+
+.img-seta,
+.img-seta-depois {
+  width: 4.1rem;
+  @include response(small){
+    width: 3rem;
   }
 }
 
 .grid {
   &--passo {
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 6rem;
-    row-gap: 3rem;
+    column-gap: 6.1rem;
+    row-gap: 3.12rem;
+    @include response(small) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    @include response(tiny){
+      display: flex;
+      flex-flow: column;
+      gap: 3.12rem;
+    }
   }
   &--aprender {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 3rem;
+    @include response(small){
+      gap: 2rem;
+    }
+    @include response(tiny) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
   }
 }
 
@@ -92,6 +158,12 @@
   grid-column: 2;
   grid-row: 1 / span 2;
   align-self: center;
+  @include response(small) {
+    grid-row: auto;
+    grid-column: 1 / span 2;
+    max-width: 27.5rem;
+    justify-self: center;
+  }
 }
 
 .cabecalho-titulo {
@@ -99,12 +171,18 @@
   &--azul {
     background-color: $cor-azul-claro;
     padding: 1.2rem 3rem;
-    border-radius: 4rem;
+    border-radius: 5rem;
     color: $cor-branca;
     align-self: center;
+    font-size: 2.76rem;
+    @include response(tiny){
+      font-size: 1.76rem;
+      padding: 1.2rem 2rem;
+      border-radius: 4rem;
+    }
   }
-  &--center{
-    @include flex($gap: 1.6rem, $justify: center);
+  &--center {
+    @include flex($gap: 1.6rem, $justify: center, $align: center);
   }
 }
 
@@ -119,8 +197,23 @@
 
 .conteudo-capaz {
   @include flex($gap: 3rem, $align: center);
+  @include response(small) {
+    display: grid;
+  }
 }
 
+.notebook {
+  @include response(big) {
+    width: 50vw;
+  }
+  @include response(small) {
+    grid-row: 2;
+    justify-self: center;
+  }
+  @include response(tiny){
+    width: 40rem;
+  }
+}
 .conteudo-aula {
   @include flex($direction: column, $gap: 2rem);
 }
@@ -133,6 +226,9 @@
   @include flex($direction: column, $gap: 3rem);
   max-width: 50rem;
   margin-bottom: 6.1rem;
+  @include response(small) {
+    margin-bottom: 0;
+  }
   &__titulo {
     border-left: solid 5px $cor-amarela;
     color: $cor-branca;
@@ -141,19 +237,41 @@
     &--amarelo {
       color: $cor-amarela;
     }
+    &--pequeno {
+      font-size: 2.3rem;
+    }
   }
   &__conteudo {
     @include flex($direction: column, $gap: 2rem);
     background-color: $cor-branca;
     border-radius: 1rem;
     padding: 3rem;
+    @include response(small){
+      max-width: 53rem;
+    }
   }
 }
 
-.img-lira-python{
+.img-lira-python {
   position: absolute;
   bottom: 0;
   right: 9.3rem;
-  width: 55rem;
+  width: 37.59vw;
+  transform: translate(10%);
+  @include response(big) {
+    width: 37.59vw;
+    transform: translate(10%);
+  }
+  @include response(small) {
+    position: relative;
+    transform: translate(20%);
+    width: 40rem;
+  }
 }
 
+.logo-hashtag{
+  @include response(small){
+    width: 5rem;
+    height: 5rem;
+  }
+}

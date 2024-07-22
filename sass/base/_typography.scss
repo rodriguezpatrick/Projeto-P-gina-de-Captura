@@ -5,7 +5,7 @@
 body{
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
-  line-height: 1.4;
+  line-height: 1.5;
   color: $cor-preta;
 }
 // Aqui eu pensei em colocar o que é global, mas o Diego acabou colocando tudo dentro da caixa com classes ao inves dos nomes das tags.
@@ -25,4 +25,18 @@ span{
 .titulo{
   @extend %titulo;
   font-weight: 500;
+  &--pequeno {
+    @include response(tiny) {
+      font-size: 2.76rem;
+    }
+  }
+}
+
+.subtitulo{
+  &--pequeno{
+    font-size: 3.33rem;
+    @include response(tiny){
+      font-size: 2.76rem;
+    }
+  }
 }

@@ -7,6 +7,10 @@
   &--amarelo {
     border-bottom: 0.4rem solid darken($cor-amarela, 25%);
     border-right: 0.4rem solid darken($cor-amarela, 25%);
+    @include response(tiny){
+      padding: 1rem 2rem;
+      font-size: 1.6rem;
+    }
   }
   &:hover {
     @extend %botao--hover;

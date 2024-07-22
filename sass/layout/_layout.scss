@@ -8,6 +8,12 @@
   display: flex;
   flex-flow: column;
   padding: 6.1rem 4.88rem;
+  @include response(small){
+    padding: 4.88rem 3.12rem;
+  }
+  @include response(tiny){
+    padding: 3.12rem 1.6rem;
+  }
 }
 
 .container {
@@ -16,75 +22,6 @@
   margin: 0 auto;
   align-items: start;
 }
-
-// Layout Seção hero
-.caixa {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  gap: 2.5rem;
-  padding: 3.3rem 2.7rem;
-  position: relative;
-  width: 50rem;
-  z-index: 99;
-  margin-bottom: 6.1rem;
-  &__lista {
-    display: flex;
-    flex-flow: column;
-    gap: 1.28rem;
-  }
-  &__item-lista {
-    display: flex;
-    align-items: start;
-    gap: 1.28rem;
-  }
-  &__imgcanto {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(35%, -35%);
-    background-color: $cor-cinza-claro;
-    border-radius: 50%;
-    padding: 1.5rem 1.3rem;
-    width: 6.5rem;
-    height: 6.5rem;
-    & img {
-      max-width: 100%;
-    }
-  }
-}
-
-
-
-// .img {
-//   display: flex;
-//   align-items: flex-end;
-//   width: 500rem;
-//   margin-left: -10rem;
-//   & img {
-//     width: 100%;
-//   }
-// }
-
-// Layout Proteção de Dados
-
-
-
-// Layout Quero participar
-
-
-
-// Layout Evento gratuito
-
-.container--eventogratuito{
-display: flex;
-flex-flow: column;  
-}
-
-// Layout capacidades
-
 
 .grid{
   display: grid;

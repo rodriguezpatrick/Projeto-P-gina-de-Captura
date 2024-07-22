@@ -1,25 +1,70 @@
 // Nesse arquivo acho que vai envolver tudo da caixa. Diego preferiu misturar tipografia com layout; Ele escreveu todas as classes dos elementos da caixa e foi colocando. A minha dúvida era mesmo a separação
 
-.caixa{
+.caixa {
+  @include flex($direction: column, $align: center, $gap: 2rem);
+  padding: 3.3rem 2.7rem;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 6.1rem;
+  max-width: 50%;
+  background-color: $cor-cinza-claro;
+  border-radius: 3rem;
+  box-shadow: inset 0rem 0rem 0.9rem 0.3rem rgb(0, 0, 0, 0.25);
+  @include response(small) {
+    max-width: 100%;
+    margin-bottom: 0;
+    max-width: 53rem;
+
+  }
+  &__lista {
+    display: flex;
+    flex-flow: column;
+    gap: 1.28rem;
+    font-size: 1.92rem;
+    @include response(tiny){
+      font-size: 1.33rem
+    }
+  }
+  &__item-lista {
+    display: flex;
+    align-items: start;
+    gap: 1.28rem;
+  }
+  &__imgcanto {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(35%, -35%);
     background-color: $cor-cinza-claro;
-    border-radius: 3rem;
-    box-shadow: inset 0rem 0rem 0.9rem 0.3rem rgb(0, 0, 0, .25);
-    &__titulos{
-        text-align: center;
+    border-radius: 50%;
+    padding: 1.5rem 1.3rem;
+    width: 6.5rem;
+    height: 6.5rem;
+    & img {
+      max-width: 100%;
     }
-    &__h1{
-        @extend %titulo;
-        color: $cor-azul-escuro;
-        
-    }
-    &__subtitulo{
-        @extend %subtitulo;
-    }
-    &__item-lista{
-        font-size: 1.92rem;
-        line-height: 1;
-    }
-    &__imgcanto{
-        box-shadow: inset 0rem 0rem 0.9rem 0.3rem rgb(0, 0, 0, .25);
-    }
+  }
+  &__titulos {
+    @include flex($direction: column, $align: center);
+  }
+  &__h1 {
+    @extend %titulo;
+    color: $cor-azul-escuro;
+    text-align: center;
+  }
+  &__subtitulo {
+    @extend %subtitulo;
+  }
+  &__item-lista {
+    font-size: 1.92rem;
+    line-height: 1;
+  }
+  &__imgcanto {
+    box-shadow: inset 0rem 0rem 0.9rem 0.3rem rgb(0, 0, 0, 0.25);
+  }
+  &__imgcheck {
+    width: 1.8rem;
+  }
 }
