@@ -241,6 +241,9 @@ span {
 .passo__titulo--azul {
   color: #256783;
 }
+.passo__icone {
+  width: 2.663rem;
+}
 
 .aula {
   display: flex;
@@ -408,6 +411,11 @@ span {
 @media (max-width: 31.25em) {
   .secao--hero {
     padding: 4.88rem 3.12rem 0 3.12rem;
+  }
+}
+@media (max-width: 50em) {
+  .secao--hero {
+    background-image: url(https://assets-global.website-files.com/61b9e0dd381626819c8d4f83/6495797b607323070bcf5e17_pgc-python-bg1-mobile.webp);
   }
 }
 .secao--protecaodados {

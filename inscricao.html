@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jornada Python da Hashtag</title>
-
+    <title>Inscrição Jornada Python</title>
+    <link rel="preload" href="css/style.css" as="style"/>
     <link rel="stylesheet" href="css/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
   </head>
   <body>
@@ -71,7 +75,10 @@
 
         <div class="img-lira-notebook">
           <img
-            src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef668d5cacb28cd77d5ef_jo%C3%A3o%20lira%20%2B%20dash.webp"
+            src="img/lira-gigante-700.webp"
+            srcset="img/lira-gigante-700.webp 700w, img/lira-gigante-424.webp 424w"
+            sizes="(max-width: 800px) 424px,
+            700w"
             alt="lira gigante"
           />
         </div>
@@ -98,6 +105,7 @@
             src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef84825a7b7d2f1aef5e3_%5BELEMENTO%5D%20seta%20dupla.png"
             alt="imagem de uma seta dupla amarela"
             class="img-seta"
+            loading="lazy"
           />
           <h2 class="titulo">
             Siga o <span class="span--azul">passo a passo!</span>
@@ -111,6 +119,7 @@
                   src="/img/alert-triangle-svgrepo-com (1).svg"
                   alt="ícone aviso"
                   class="passo__icone"
+                  loading="lazy"
                 />
               </div>
               <p class="passo__titulo passo__titulo--azul">Passo 1</p>
@@ -126,7 +135,7 @@
           <div class="passo passo-2">
             <div class="passo__cabecalho">
               <div class="passo__caixa-icone">
-                <img src="img/certified-svgrepo-com.svg" alt="ícone check" />
+                <img src="img/certified-svgrepo-com.svg" alt="ícone check" class="passo__icone" loading="lazy"/>
               </div>
               <p class="passo__titulo">Passo 2</p>
             </div>
@@ -145,6 +154,8 @@
                 <img
                   src="img/chart-mixed-svgrepo-com.svg"
                   alt="ícone gráfico"
+                  class="passo__icone"
+                  loading="lazy"
                 />
               </div>
               <p class="passo__titulo">Passo 3</p>
@@ -162,7 +173,7 @@
           <div class="passo passo-4">
             <div class="passo__cabecalho">
               <div class="passo__caixa-icone">
-                <img src="img/python-127-svgrepo-com.svg" alt="ícone python" />
+                <img src="img/python-127-svgrepo-com.svg" alt="ícone python" class="passo__icone" loading="lazy"/>
               </div>
               <p class="passo__titulo">Passo 4</p>
             </div>
@@ -178,6 +189,7 @@
             src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef848a5d528c80b0c3f6b_%5BELEMENTO%5D%20jo%C3%A3o%20lira%20e%20planilha.webp"
             alt="imagem professor Lira"
             class="img-lira"
+            loading="lazy"
           />
         </div>
       </div>
@@ -190,6 +202,7 @@
             src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef98e3d834a18ba77139f_%5BELEMENTO%5D%20seta-dupla.png"
             alt="seta dupla amarela para baixo"
             class="img-seta"
+            loading="lazy"
           />
           <h2 class="titulo titulo--pequeno">
             Nesse <span class="span--azul">evento gratuito</span> você vai
@@ -201,22 +214,24 @@
             ><img
               src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/64ecec733661d11fda8a436c_%5BLPY15%5D%20Thumb%20-%20Aula%201.webp"
               alt="python power up "
-              class="aprender-img" /></a
+              class="aprender-img" 
+              loading="lazy"/></a
           ><a href="https://www.youtube.com/watch?v=3e_pbrjXdjU"
             ><img
               src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/659dac28e97f5316e0e4fe06_%5BLPY15%5D%20Thumb%20-%20Aula%202%20-%20sem%20data%20(1).webp"
               alt="python insights"
-              class="aprender-img" /></a
+              class="aprender-img" loading="lazy"/></a
           ><a href="https://www.youtube.com/watch?v=LFXH6fPYAWA"
             ><img
               src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/64ecec95d687718995720dee_%5BLPY15%5D%20Thumb%20-%20Aula%203.webp"
               alt="python IA"
-              class="aprender-img" /></a
+              class="aprender-img" loading="lazy"/></a
           ><a href="https://www.youtube.com/watch?v=woyZIlCrxHs"
             ><img
               src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/64ececa07913e34e13d347ff_%5BLPY15%5D%20Thumb%20-%20Aula%204.webp"
               alt="python dev"
               class="aprender-img"
+              loading="lazy"
           /></a>
         </div>
         <button class="botao botao--amarelo botao--centralizado js-button">
@@ -232,6 +247,7 @@
             src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef98e3d834a18ba77139f_%5BELEMENTO%5D%20seta-dupla.png"
             alt="imagem de uma seta dupla amarela"
             class="img-seta"
+            loading="lazy"
           />
           <h2 class="subtitulo subtitulo--center subtitulo--pequeno">
             Depois das 4 aulas você vai ser capaz de
@@ -242,6 +258,7 @@
             src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/6669ea26b4db671ebdc8d1f1_pgcpy-mockup-p-500.webp"
             alt="notebook aberto"
             class="notebook"
+            loading="lazy"
           />
           <div class="conteudo-aula">
             <div class="aula">
@@ -250,6 +267,7 @@
                   src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/6669ebaecad7b11c11ba6c7a_point%201.webp"
                   alt="check amarelohttps://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/6669ebaecad7b11c11ba6c7a_point%201.webp"
                   class="img-seta-depois"
+                  loading="lazy"
                 />
                 <h3 class="subtitulo-aula">
                   Resolver os desafios mais importantes
@@ -268,6 +286,7 @@
                   src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/6669ebaecad7b11c11ba6c7a_point%201.webp"
                   alt="check amarelohttps://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/6669ebaecad7b11c11ba6c7a_point%201.webp"
                   class="img-seta-depois"
+                  loading="lazy"
                 />
                 <h3 class="subtitulo-aula">Automatizar suas tarefas</h3>
               </div>
@@ -283,6 +302,7 @@
                   src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/6669ebaecad7b11c11ba6c7a_point%201.webp"
                   alt="check amarelohttps://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/6669ebaecad7b11c11ba6c7a_point%201.webp"
                   class="img-seta-depois"
+                  loading="lazy"
                 />
                 <h3 class="subtitulo-aula">Trabalhar com Dados</h3>
               </div>
@@ -303,6 +323,7 @@
             src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef98e3d834a18ba77139f_%5BELEMENTO%5D%20seta-dupla.png"
             alt="seta para baixo"
             class="img-seta"
+            loading="lazy"
           />
           <h2 class="subtitulo">Experiências e Projetos</h2>
         </div>
@@ -319,7 +340,7 @@
                 demanda.
               </p>
             </div>
-            <!-- <img src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/6669f0cac9a08a51923270cb_pgcpy-img-1.webp" alt="imagem engrenagem"> -->
+           
           </div>
           <div class="projeto projeto--backgroundimage2">
             <div class="projeto__caixa">
@@ -334,7 +355,7 @@
                 18%.
               </p>
             </div>
-            <!-- <img src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/6669f0ca1e0979e7b4f04557_pgcpy-img-2.webp" alt="digitando no notebook"> -->
+            
           </div>
           <div class="projeto projeto--backgroundimage3">
             <div class="projeto__caixa">
@@ -350,7 +371,7 @@
                 características dos clientes.
               </p>
             </div>
-            <!-- <img src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/6669f0ca1f13bcb7e3756f27_pgcpy-img-3.webp" alt="dedo de robo e humando se tocando"> -->
+            
           </div>
           <div class="projeto projeto--backgroundimage4">
             <div class="projeto__caixa">
@@ -363,7 +384,7 @@
                 ferramenta Flet, tanto front end como backend, feitos em Python.
               </p>
             </div>
-            <!-- <img src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/6669f0ca3593f612e4d9d529_pgcpy-img-4.webp" alt="dedo apontando notebook"> -->
+           
           </div>
         </div>
 
@@ -402,6 +423,7 @@
           <img
             src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/666a0826380e88459580269b_pgcpy-lira%20(1)-p-500.webp"
             alt="foto lira python"
+            loading="lazy"
             
           />
         </div>
@@ -411,9 +433,10 @@
     <section class="secao--footer">
       <div class="container container--footer">
         <img
-          src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/61b9f085f608c40d5a8b97f9_logo%20hash%20quadrada%20h%20(1).webp"
+          src="img/Logo H Quadrado.webp"
           alt="logo Hashtag"
           class="logo-hashtag"
+          loading="lazy"
         />
         <p>
           <a

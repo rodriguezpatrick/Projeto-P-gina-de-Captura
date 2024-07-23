@@ -9,8 +9,11 @@
     background-repeat: no-repeat;
     padding: 6.1rem 4.88rem 0 4.88rem;
     overflow: hidden;
-    @include response(tiny){
-      padding: 4.88rem 3.12rem 0 3.12rem
+    @include response(tiny) {
+      padding: 4.88rem 3.12rem 0 3.12rem;
+    }
+    @include response(small) {
+      background-image: url(https://assets-global.website-files.com/61b9e0dd381626819c8d4f83/6495797b607323070bcf5e17_pgc-python-bg1-mobile.webp);
     }
   }
   &--protecaodados {
@@ -28,7 +31,7 @@
     background-repeat: no-repeat;
     padding-bottom: 0;
   }
-  &--footer{
+  &--footer {
     padding: 2.5rem 2rem;
   }
 }
@@ -52,7 +55,7 @@
     transform: none;
     max-width: 53rem;
   }
-  @include response(tiny){
+  @include response(tiny) {
     width: 40rem;
   }
 }
@@ -87,7 +90,7 @@
     @include flex($direction: column, $gap: 6rem);
     display: flex;
     flex-flow: column;
-    @include response(small){
+    @include response(small) {
       gap: 3.12rem;
     }
   }
@@ -99,7 +102,7 @@
   }
   &--projetos {
     @include flex($direction: column, $gap: 6.1rem, $justify: center);
-    @include response(tiny){
+    @include response(tiny) {
       gap: 3.12rem;
     }
   }
@@ -110,9 +113,9 @@
       gap: 3.12rem;
     }
   }
-  &--footer{
-    @include response(small){
-      @include flex($direction: column, $align: center, $gap: 2rem)
+  &--footer {
+    @include response(small) {
+      @include flex($direction: column, $align: center, $gap: 2rem);
     }
   }
 }
@@ -120,7 +123,7 @@
 .img-seta,
 .img-seta-depois {
   width: 4.1rem;
-  @include response(small){
+  @include response(small) {
     width: 3rem;
   }
 }
@@ -134,7 +137,7 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
     }
-    @include response(tiny){
+    @include response(tiny) {
       display: flex;
       flex-flow: column;
       gap: 3.12rem;
@@ -144,7 +147,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 3rem;
-    @include response(small){
+    @include response(small) {
       gap: 2rem;
     }
     @include response(tiny) {
@@ -175,7 +178,7 @@
     color: $cor-branca;
     align-self: center;
     font-size: 2.76rem;
-    @include response(tiny){
+    @include response(tiny) {
       font-size: 1.76rem;
       padding: 1.2rem 2rem;
       border-radius: 4rem;
@@ -210,7 +213,7 @@
     grid-row: 2;
     justify-self: center;
   }
-  @include response(tiny){
+  @include response(tiny) {
     width: 40rem;
   }
 }
@@ -246,7 +249,7 @@
     background-color: $cor-branca;
     border-radius: 1rem;
     padding: 3rem;
-    @include response(small){
+    @include response(small) {
       max-width: 53rem;
     }
   }
@@ -269,8 +272,8 @@
   }
 }
 
-.logo-hashtag{
-  @include response(small){
+.logo-hashtag {
+  @include response(small) {
     width: 5rem;
     height: 5rem;
   }

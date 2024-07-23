@@ -28,7 +28,7 @@
 .popup__botao, .botao {
   font-weight: 700;
   font-size: 1.92rem;
-  color: #fff;
+  color: #1a1b1f;
   background-color: #eebe2a;
   padding: 1rem 3.12rem;
   border-radius: 3rem;
@@ -67,10 +67,6 @@ img {
   display: block;
 }
 
-h2 {
-  font-size: 3.33rem;
-}
-
 /**
  * Basic typography style for copy text
  Nessa tipografia aqui o Diego colocou tudo global só do body - até agora. Então vou seguir esse mesmo raciocínio.
@@ -91,6 +87,15 @@ span {
 }
 @media (max-width: 31.25em) {
   .titulo--pequeno {
+    font-size: 2.76rem;
+  }
+}
+
+.subtitulo--pequeno {
+  font-size: 3.33rem;
+}
+@media (max-width: 31.25em) {
+  .subtitulo--pequeno {
     font-size: 2.76rem;
   }
 }
@@ -125,6 +130,12 @@ span {
 .botao--amarelo {
   border-bottom: 0.4rem solid #8d6d0b;
   border-right: 0.4rem solid #8d6d0b;
+}
+@media (max-width: 31.25em) {
+  .botao--amarelo {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+  }
 }
 .botao--centralizado {
   align-self: center;
@@ -414,6 +425,9 @@ span {
   background-repeat: no-repeat;
   padding-bottom: 0;
 }
+.secao--footer {
+  padding: 2.5rem 2rem;
+}
 
 .protecao-conteudo {
   font-size: 1.33rem;
@@ -491,7 +505,7 @@ span {
   flex-flow: column nowrap;
   align-items: stretch;
   justify-content: start;
-  gap: 3rem;
+  gap: 4.88rem;
   padding: 4.88rem 3.9rem;
   background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/6669ea25d9240a2849caa85b_pgcpy-bg-1.webp);
   color: #fff;
@@ -501,7 +515,12 @@ span {
   flex-flow: column nowrap;
   align-items: stretch;
   justify-content: center;
-  gap: 6rem;
+  gap: 6.1rem;
+}
+@media (max-width: 31.25em) {
+  .container--projetos {
+    gap: 3.12rem;
+  }
 }
 .container--lira {
   width: 100%;
@@ -514,6 +533,15 @@ span {
     justify-content: center;
     gap: 0;
     gap: 3.12rem;
+  }
+}
+@media (max-width: 50em) {
+  .container--footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
   }
 }
 
@@ -587,9 +615,17 @@ span {
 .cabecalho-titulo--azul {
   background-color: #256783;
   padding: 1.2rem 3rem;
-  border-radius: 4rem;
+  border-radius: 5rem;
   color: #fff;
   align-self: center;
+  font-size: 2.76rem;
+}
+@media (max-width: 31.25em) {
+  .cabecalho-titulo--azul {
+    font-size: 1.76rem;
+    padding: 1.2rem 2rem;
+    border-radius: 4rem;
+  }
 }
 .cabecalho-titulo--center {
   display: flex;
@@ -629,6 +665,11 @@ span {
   .notebook {
     grid-row: 2;
     justify-self: center;
+  }
+}
+@media (max-width: 31.25em) {
+  .notebook {
+    width: 40rem;
   }
 }
 
@@ -708,6 +749,13 @@ span {
     position: relative;
     transform: translate(20%);
     width: 40rem;
+  }
+}
+
+@media (max-width: 50em) {
+  .logo-hashtag {
+    width: 5rem;
+    height: 5rem;
   }
 }
 
